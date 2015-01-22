@@ -1,0 +1,19 @@
+{
+    "name": "Stripe Subscribed Customers Counter",
+    "version": "0.1",
+    "description": "Shows number of your subscribed customers on Stripe.",
+    "background": {
+        "persistent": true,
+        "scripts": [ "background.js" ]
+    },
+    "browser_action": {
+        "default_icon": "/icons/icon32.png",
+        "default_title": "Stripe Counter"
+    },
+    "icons": {
+        "128": "/icons/icon128.png"
+    },
+    "manifest_version": 2,
+    "update_url": "http://clients2.google.com/service/update2/crx",
+    "permissions": [ "tabs", "webRequest", "alarms", "cookies", "*://*.stripe.com/*" ]
+}
